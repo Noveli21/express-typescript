@@ -29,7 +29,7 @@ class UserRoutes extends BaseRouter {
      *  post:
      *     tags:
      *     - Todo
-     *     summary: create a new todo
+     *     summary: create a new user
      *     requestBody:
      *      required: true
      *      content:
@@ -38,7 +38,7 @@ class UserRoutes extends BaseRouter {
      *              $ref: '#/components/schemas/UpdateUser'
      *     responses:
      *      200:
-     *        description: create a new todo success
+     *        description: create a new user success
      */
     this.router.post("/", UserController.create);
 
